@@ -1,15 +1,15 @@
 {
-  "name": "algorithms",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "randomize": "esbuild scripts/randomizeWords.ts --bundle --minify --target=node16 --outdir=build/scripts --platform=node && node build/scripts/randomizeWords.js",
-    "binarySearch": "esbuild src/index.ts --bundle --minify --target=node16 --outdir=build/binarySearch --platform=node && clear && node build/binarySearch/index.js"
-  },
-  "devDependencies": {
-    "@types/node": "16",
-    "esbuild": "^0.15.12",
-    "typescript": "^4.8.4"
-  }
+	"name": "algorithms",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"randomize": "esbuild scripts/randomizeWords.ts --bundle --minify --target=node14 --outdir=build/scripts --platform=node && node build/scripts/randomizeWords.js",
+		"binarySearch": "sh build.sh && clear && node build/binarySearch/index.js"
+	},
+	"devDependencies": {
+		"@types/node": "16",
+		"esbuild": "^0.15.12",
+		"typescript": "^4.8.4"
+	}
 }
